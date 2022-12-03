@@ -1,0 +1,384 @@
+@font-face {
+    font-family: "campton2";
+    src: url("../fonts/Campton2.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+@keyframes fadeIn { /*CUSTOM FADE KEYFRAMES FOR LANDING PAGE ANIMATION*/
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes wToB { /*CUSTOM WHITE TO BLACK KEYFRAMES FOR LANDING PAGE ANIMATION*/
+    0% { color: white}
+    90% {color: white;}
+    100% {color: black;}
+}
+
+#top {
+    
+    align-content: center;
+}
+#logo{
+    text-decoration: none;
+    display: block;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#logo:visited, #logo:active {
+    color: black;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-buttons { /*NAV BAR BUTTONS*/
+
+    text-decoration: none;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: roboto;
+    transition: 300ms;
+    font-size: larger;    
+}
+
+.nav-buttons:link {
+    color:black;
+}
+.nav-buttons:visited {
+    color: black;
+}
+
+.nav-buttons:hover {
+    font-size: x-large;
+    border-bottom: solid 0.1rem;
+    border-color: black;
+    /* transition: 300ms; */
+}
+    
+.bigtext {
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 2s;
+}
+
+.smalltext {
+    
+    margin-top: 0.75rem;
+    margin-bottom: 2.25rem;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: wToB, fadeIn;
+    animation-duration: 1s, 2s;
+    animation-delay: 0s, 0.75s;
+    
+}
+
+#main {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* display: flex; */
+    /* display: block; */
+    /* background-color: gray; */
+}
+
+.shop-all-buttons { /*LANDING PAGE FASHION COLLECTION BUTTONS*/
+    font-size: larger;
+    font-family: roboto;
+    font-weight: 100;
+    padding: 0.35rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    color: black;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 300ms;
+    text-decoration: none;
+    
+}
+
+.shop-all-buttons:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+
+#mens-container {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0,0,0,0), rgb(0,0,0,0)), url("../images/mens1.jpg");
+}
+
+#mens-bar {
+    padding-left: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#womens-container {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(0,0,0,0), rgb(0,0,0,0)), url("../images/women1.1.jpg");
+}
+
+#womens-bar {
+    text-align: right;
+    padding-right: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#kids-container {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0,0,0,0), rgb(0,0,0,0)), url("../images/kids1.1.jpg");
+}
+
+#kids-bar {
+    padding-left: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sales-container {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(0,0,0,0), rgb(0,0,0,0)), url("../images/sales1.1.jpg");
+}
+
+#sales-bar {
+    text-align: right;
+    padding-right: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    color: rgb(0,0,0,.1);
+}
+
+#homefooter {
+    font-size: small;
+    text-align: center;
+    color: rgb(0,0,0,.3)
+}
+
+#homefooter > h6 {
+    margin: .3rem;
+}
+
+/*PAGES*/
+
+#page-title {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: x-large;
+}
+
+#cardset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 5px;
+    margin: 1rem;
+    float: right;
+    box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: 350ms;
+    /* flex-wrap: wrap; */
+}
+
+.card > img {
+    border-radius: 5px;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+}
+
+.card > p, .card > h3 {
+    padding: 0.15rem;
+    padding-left: .85rem;
+    font-family: roboto;
+
+}
+
+.card:hover {
+    scale: 107%;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: small;
+    text-align: center;
+    color: rgb(0,0,0,.3)
+}
+
+footer > h6 {
+    margin: .3rem;
+}
+
+button > img {
+    width: 2rem;
+    height: 1.75rem;
+    float: right;
+    /* margin-right: 1rem; */
+    transform: translateY(-0.5rem);
+}
+
+button {
+    margin-right: 0.75rem;
+    border: none;
+    background-color: white;
+    font-weight: 300;
+    text-decoration: none;
+    float: right;
+    transform: translateY(-2.5rem);
+    transition: 200ms;
+}
+
+button:hover {
+    scale: 110%;
+}
+
+.sale-item {
+    color: red;
+}
+
+.about {
+    font-size: larger;
+    text-align: center;
+    font-family: roboto;
+
+}
+.about-end {
+    font-size: x-large;
+    text-align: center;
+    font-family: roboto;
+    margin: 2rem;
+    margin-bottom: 20rem;
+}
+
+/* #cart {
+    position:absolute;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    border:2px solid tomato;
+    transform: translate(-50%, -50%);
+} */
+
+#cart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    transform:translateY(-2rem);
+    font-family: roboto;
+    padding: 1rem;
+    z-index: 1;
+    
+ 
+}
+
+#cart:hover {
+    font-weight: bolder;
+}
+
+.popClass {
+
+    visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  position:absolute;
+  /* max-width: 100%; */
+  /* height: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%,-50%);
+  z-index: 3;
+  padding: 3rem;
+  box-shadow: 0px 0px 1rem 0.5rem rgba(0, 0, 0, 0.2);
+  font-family: roboto;
+  font-size: larger;
+}
+
+
+.popClass .show {
+    visibility: visible;
+    
+}
+
+.show {
+    visibility: visible;
+    
+}
+
+table {
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+th, td {
+    
+
+    padding: 1rem;
+}
+
+#totals {
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  .showOverlay {
+    display: block;
+  }
+
+  

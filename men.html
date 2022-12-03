@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" href = "css/homepage.css">
+        <meta charset="UTF-8">
+        <title>GENERIC CLOTHING</title>
+    </head>
+
+    <script type = "text/javascript" src = "javascript/cart.js"></script>
+
+    <body>
+        <div id = "overlay">
+            <div class = "popClass" id = "popUpWindow" >MY CART
+                <table>
+                    <tr id = "table-header">
+                        <th>Price</th>
+                        <th>Item</th>
+                    </tr>
+                    <tr>
+                        <td id = "totals">TOTAL: &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id = "top"><a href = "landing.html" id="logo">G E N E R I C</a></div>
+        <div id = "cart" onclick = "popUp();addOverlay()">CART</div>
+        &nbsp;
+        <nav>
+            <a href = "men.html" class = "nav-buttons">MEN</a>
+            <a href = "women.html" class = "nav-buttons">WOMEN</a>
+            <a href = "kids.html" class = "nav-buttons">KIDS</a>
+            <a href = "sales.html" class = "nav-buttons">SALES</a>
+            <a href = "about.html" class = "nav-buttons">ABOUT</a>
+        </nav>
+        <div id = "page-title">M E N</div>
+        
+        <div id = "cardset">
+            <div class = "card">
+                <img src = "images/menshirt1.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's T-Shirt - Silver Green</p>
+            </div>
+            <div class = "card">
+                <img src = "images/menshirt2.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's Plaid Button-Down</p>
+            </div>
+            <div class = "card">
+                <img src = "images/menshirt3.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's T-Shirt - Navy Blue</p>
+            </div>
+            <div class = "card">
+                <img src = "images/menshirt4.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's T-Shirt - Matte Grey</p>
+            </div>
+            <div class = "card">
+                <img src = "images/menshirt5.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's T-Shirt - Poopi Brown</p>
+            </div>
+            <div class = "card">
+                <img src = "images/menshirt6.jpeg" alt = "clothes card">
+                <h3>$5,900</h3><button onclick = "addItem()">+<img src = "images/cart.png" alt = "cart-button"></button>
+                <p>GENERIC Men's T-Shirt - Sleek Black</p>
+            </div>
+        </div>
+        
+
+    </body>
+   
+    <footer>
+        ®2022 GENERIC™
+        <h6>All right reserved.</h6>
+    </footer>
+
+</html>
